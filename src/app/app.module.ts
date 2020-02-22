@@ -14,6 +14,10 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 //importar rutas
 import{ROUTES} from './app.routes';
 import { SpotifyService } from './services/spotify.service';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { SpotifyService } from './services/spotify.service';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    DomseguroPipe,
+    LoadingComponent,
+    TarjetasComponent
   ],
   imports: [
     BrowserModule,
